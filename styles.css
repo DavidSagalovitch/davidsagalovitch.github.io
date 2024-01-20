@@ -185,12 +185,21 @@
     align-items: center; 
   }
 
-  .myself-image{
-    max-width: 100%;
-    margin-right: 20px;
-  }
-
   #myself-image {
     width: 300px;
     height: auto; 
   }
+
+.text-container {
+  align-items: flex-start; /* Align text at the top */
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align logos at the center horizontally */
+}
+
+.logos {
+  margin: 10px; /* Adjust the margin for spacing between logos */
+}
