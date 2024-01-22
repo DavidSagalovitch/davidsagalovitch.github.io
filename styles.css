@@ -159,6 +159,7 @@
   .pages {
     background: rgb(119,18,18);
     background: linear-gradient(0deg, rgba(119,18,18,1) 0%, rgba(0,0,0,1) 100%);
+    min-height: 100vh;
     padding:100px 0;
   }
   .hero__container {
@@ -168,7 +169,6 @@
     align-items: flex-start; 
     max-width: 1200px;
     margin: 0 auto;
-    height: 90vh; 
     text-align: center;
     padding: 30px;
   }
@@ -202,4 +202,25 @@
 
 .logos {
   margin: 10px; /* Adjust the margin for spacing between logos */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.NotesImages {
+  width: 500px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Adjust the margin for spacing between images */
 }
