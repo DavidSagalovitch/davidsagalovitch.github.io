@@ -176,12 +176,13 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
   }
 
   .hero__heading {
     font-size: 10vmin;
     margin-bottom: 24px;
+    margin-top: -100px;
     color: pink;
   }
 
@@ -228,10 +229,26 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  width: 100%; /* Ensure the row takes the full width */
+}
+
+.image-row:first-child {
+  justify-content: space-between; /* Adjust if needed */
 }
 
 .NotesImages {
   width: 50%; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   margin: 10px; /* Adjust the margin for spacing between images */
+}
+
+.NotesDescription{
+  color: azure;
+  font-size: 4vmin;
+}
+
+.colour-modes{
+  font-size: 7vmin;
+  text-align: center;
+  color: azure;
 }
