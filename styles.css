@@ -186,6 +186,11 @@
     color: pink;
   }
 
+  .hero__description{
+    color: azure;
+    padding-bottom: 15px;
+  }
+
   .about-content {
     display: flex;
     justify-content: flex-start; 
@@ -193,12 +198,13 @@
   }
 
  #myself-image{
-  width: 50%;
+  width: 30%;
   height: auto;
  }
 
  #myself-text{
   width: 100%;
+  color: azure;
  }
 
 .text-container {
@@ -251,4 +257,28 @@
   font-size: 7vmin;
   text-align: center;
   color: azure;
+}
+
+.main__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-image: linear-gradient(to right, red, pink);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding-left: 10px;
+  padding-right: 1hmin;
+}
+
+.main__btn:hover {
+  transform: scale(1.05); 
+}
+
+.main__btn:active {
+  transform: scale(0.95);
 }
