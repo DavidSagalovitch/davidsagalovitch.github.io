@@ -200,6 +200,8 @@
  #myself-image{
   width: 30%;
   height: auto;
+  border-radius: 40%;
+  object-fit: cover;
  }
 
  #myself-text{
@@ -219,7 +221,7 @@
 
 .logos {
   width: 100%;
-  margin: 10px; /* Adjust the margin for spacing between logos */
+  padding: 2vh;
 }
 
 .image-container {
