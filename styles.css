@@ -268,7 +268,7 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
-  background-image: linear-gradient(to right, red, pink);
+  background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
   border: none;
   border-radius: 20px;
   cursor: pointer;
