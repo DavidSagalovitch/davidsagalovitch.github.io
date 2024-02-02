@@ -1,13 +1,25 @@
 const menu = document.querySelector('#mobile-menu');
-const menulinks = document.querySelector('.navbar__menu');
+const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
 
 const mobileMenu = () => {
     menu.classList.toggle('is-active')
-    menulinks.classList.toggle('active')
+    menuLinks.classList.toggle('active')
 };
 
 menu.addEventListener('click', mobileMenu);
+
+// Close the mobile menu when clicking outside of it
+document.addEventListener('click', (e) => {
+  // Check if the click is outside of the menu and the menu button
+  if (!menu.contains(e.target) && !menuLinks.contains(e.target) && menu.classList.contains('is-active')) {
+      menu.classList.remove('is-active');
+      menuLinks.classList.remove('active');
+  }
+});
+
+// Prevent the menu from closing when clicking inside the menu
+menuLinks.addEventListener('click', (e) => e.stopPropagation());
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('.navbar__links');
